@@ -39,4 +39,3 @@ def sorted_list(list):
         num = item['num']
         if char.isalpha():
             print( f'{char}: {num}' )
-###### WORK IN PROGRESS ###########
