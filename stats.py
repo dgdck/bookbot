@@ -18,3 +18,25 @@ def get_num_chars(words):
         letter_dict.update( { char: count} )
 
     return letter_dict
+
+def sort_on(items):
+    return items["num"]
+
+def list_dict(my_dict):
+    list_of_dicts = [ ]
+
+    for k, v in my_dict.items():
+        list_of_dicts.append( { "char": k, "num": v} )
+    
+    list_of_dicts.sort(reverse=True, key=sort_on)
+
+    return list_of_dicts
+
+
+def sorted_list(list):
+    for item in list:
+        char = item['char']
+        num = item['num']
+        if char.isalpha():
+            print( f'{char}: {num}' )
+###### WORK IN PROGRESS ###########
